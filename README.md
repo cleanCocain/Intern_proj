@@ -85,8 +85,8 @@ var path = require('path');
 var webpack = require('webpack');
 module.exports = {
 
-     entry: {
-         main:'./js/main.js',
+   entry: {
+   main:'./js/main.js',
 },
      output: {
          path: path.resolve(__dirname, 'build'),
@@ -95,10 +95,10 @@ module.exports = {
      module: {
          loaders: [
               {
-                    test: /\.js$/,  
-                    loader: 'babel-loader',
-                    query: {
-                           presets: ['es2015']  
+                 test: /\.js$/,  
+                 loader: 'babel-loader',
+                 query: {
+                       presets: ['es2015']  
                      }
                }
            ]
@@ -108,6 +108,8 @@ module.exports = {
       },
       devtool: 'source-map'
 };
+
+
 
 
 
